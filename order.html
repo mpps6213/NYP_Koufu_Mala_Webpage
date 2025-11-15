@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <link rel="stylesheet" href="css/practice2.css">
+    <style>
+        main{
+            text-align: center;
+        }
+        fieldset{
+            background-color: rgb(235, 173, 173);
+            border: 3px outset rgb(59, 8, 8);
+            border-radius: 30px;
+            padding: 10px;
+            margin: 20px;
+            font-family: cursive;
+            font-size: 1.1em;
+            
+        }
+        legend{
+            background-color: rgb(59, 8, 8);
+            color: rgb(235, 173, 173);
+            border: 3px dashed rgb(235, 173, 173);
+            border-radius: 20px;
+            padding: 10px;
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.3em;
+        }
+        #flex{
+            display: flex;
+        }
+        .left{
+            text-align: left;
+            flex: 1;
+        }
+        label{
+            color: rgb(59, 8, 8);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.2em;
+            padding: 5px;
+        }
+        button{
+            font-size: 1.2em;
+            font-weight: bold;
+            color: rgb(255, 240, 221);
+            background-color: rgb(59, 8, 8);
+            border: 5px outset rgb(59, 8, 8);
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+        button:hover{
+            background-color: rgb(235, 173, 173);
+            color: rgb(59, 8, 8);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <ul id="img-nav">
+                <li id="Koufu"><a href="https://www.koufu.com.sg/" target="_blank"><img src="images/Koufu.png" alt="Koufu" title="Koufu"></a></li>
+                <li id="NYP"><a href="http://nyp.edu.sg" target="_blank"><img src="images/NYP.jpg" alt="NYP" title="Nanyang Polytechnic (NYP)"></a></li>
+            </ul>
+            <ul id="link-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="memberRegistration.html">Member</a></li>
+            </ul>
+        </nav>
+        <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+            <fieldset id="flex">
+                <legend>Mala Hot Pot</legend>
+                <div class="left">
+                    <label>Vegetables</label><br>
+                    <input name="Vegetables" type="checkbox" value="Kailan">Kailan<br>
+                    <input name="Vegetables" type="checkbox" value="Water Spinach"> Water Spinach<br>
+                    <input name="Vegetables" type="checkbox" value="Chinese Cabbage(Bai Cai)">Chinese Cabbage(Bai Cai)<br>
+                    <input name="Vegetables" type="checkbox" value="Broccoli">Broccoli<br>
+                    <input name="Vegetables" type="checkbox" value="Cauliflower">Cauliflower<br>
+                    <input name="Vegetables" type="checkbox" value="Cabbage">Cabbage<br>
+                    <input name="Vegetables" type="checkbox" value="Bell Pepper">Bell Pepper<br>
+                    <input name="Vegetables" type="checkbox" value="Carrot">Carrot<br>
+                    <input name="Vegetables" type="checkbox" value="Eggplant">Eggplant<br>
+                    <input name="Vegetables" type="checkbox" value="Lady Finger">Lady Finger<br>
+                    <input name="Vegetables" type="checkbox" value="Corn">Corn<br>
+                    <input name="Vegetables" type="checkbox" value="Tomato">Tomato<br>
+                    <input name="Vegetables" type="checkbox" value="Lotus Root">Lotus Root<br>
+                    <input name="Vegetables" type="checkbox" value="Cheese Tofu">Cheese Tofu<br>
+                    <input name="Vegetables" type="checkbox" value="Dried Beancurd Skin">Dried Beancurd Skin<br>
+                    <input name="Vegetables" type="checkbox" value="Fried Tofu Skin">Fried Tofu Skin<br>
+                    <input name="Vegetables" type="checkbox" value="Glass Noodle">Glass Noodle<br>
+                    Noodle<input name="Vegetables" type="number" value="Noodle" min="1" max="5"><br>
+                    How many grams?<input name="Vegetables kg" type="number" value="kg" step="0.1" min="1.0" max="5.0"><br>(&dollar;1.00 / 100g)<br>
+                </div>
+                <div class="left">
+                    <label>Mushrooms</label><br>
+                    <input name="Mushrooms" type="checkbox" value="Enoki Mushroom">Enoki Mushroom<br>
+                    <input name="Mushrooms" type="checkbox" value="Button Mushroom">Button Mushroom<br>
+                    <input name="Mushrooms" type="checkbox" value="King Oyster Mushroom">King Oyster Mushroom<br>
+                    <input name="Mushrooms" type="checkbox" value="Oyster Mushroom">Oyster Mushroom<br>
+                    How many grams?<input name="Mushrooms" type="number" value="kg" step="0.1" min="1.0" max="5.0"><br>(&dollar;1.20 / 100g)<br>
+                </div>
+                <div class="left">
+                    <label>Meat</label><br>
+                    <input name="Meat" type="checkbox" value="Chicken">Chicken<br>
+                    <input name="Meat" type="checkbox" value="Pork">Pork<br>
+                    <input name="Meat" type="checkbox" value="ChickenSausage">Chicken Sausage<br>
+                    <input name="Meat" type="checkbox" value="Pork Sausage">Pork Sausage<br>
+                    <input name="Meat" type="checkbox" value="CrabStick">Crab Stick<br>
+                    <input name="Meat" type="checkbox" value="Meatball">Meatball<br>
+                    <input name="Meat" type="checkbox" value="MincedChicken">MincedChicken<br>
+                    <input name="Meat" type="checkbox" value="QuailEgg">Quail Egg<br>
+                    <input name="Meat" type="checkbox" value="SeaweedChicken">Seaweed Chicken<br>
+                    How many grams?<input name="Meat" type="number" value="kg" step="0.1" min="1.0" max="5.0"><br>(&dollar;2.00 / 100g)<br>
+                </div>
+                <div class="left">
+                    <label>Beef/SeaFood</label><br>
+                    <input name="Beef/SeaFood" type="checkbox" value="Beef">Beef<br>
+                    <input name="Beef/SeaFood" type="checkbox" value="Baby Octopus">Baby Octopus<br>
+                    <input name="Beef/SeaFood" type="checkbox" value="Octopus Tentacles">Octopus Tentacles<br>
+                    <input name="Beef/SeaFood" type="checkbox" value="Squid">Squid<br>
+                    <input name="Beef/SeaFood" type="checkbox" value="shrimp">Shrimp<br>
+                    How many grams?<input name="Beef/SeaFood" type="number" value="kg" step="0.1" min="1.0" max="5.0"><br>(&dollar;2.00 / 100g)<br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Set Meal</legend>
+                <div>
+                    <label>Set Meal 1-2pax</label>
+                    <input name="SetMeal1-2pax" type="number" value="SetMeal1-2pax" min="1" max="5"><br>
+                    <label>Set Meal 3-4pax</label>
+                    <input name="SetMeal1-2pax" type="number" value="SetMeal3-4pax" min="1" max="5">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Others</legend>
+                <div>
+                    <label>Stir-Fry French Bean</label>
+                    <input name="Stir-Fry French Bean" type="number" value="SetMeal1-2pax" min="1" max="5"><br>
+                    <label>Hot & Spicy Potato Slices</label>
+                    <input name="Hot & Spicy Potato Slices" type="number" value="SetMeal3-4pax" min="1" max="5"><br>
+                    <label>Plain Rice</label>
+                    <input name="Plain Rice" type="number" value="SetMeal3-4pax" min="1" max="5"><br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label>Spicy Level</label>
+                <div>
+                    <input name="Spicy Level" type="radio" value="Mild" required>Mild &nbsp; 
+                    <input name="Spicy Level" type="radio" value="Medium" required>Medium &nbsp; 
+                    <input name="Spicy Level" type="radio" value="Hot" required>Hot &nbsp;
+                </div>
+                 
+            </fieldset>
+            <button type="Submit">Order</button>
+            <button type="Reset">Clear</button>
+
+        </form>
+        <footer>
+            <div id="footer-nav">
+                <p><a href="http://nyp.edu.sg" target="_blank">Nanyang Polytechnic</a></p>
+                <p><a href="https://www.koufu.com.sg/" target="_blank">Koufu</a></p>
+                
+                <!--flex like apple footer-->
+            </div> 
+
+            <div  id="copyright">
+                <p>COPYRIGHT&copy;2025 ALL RIGHTS RESERVED BY NYP KOUFU</p>
+                <!--copyright-->
+            </div>
+        </footer>
+    </main>
+
+    
+</body>
+</html>
